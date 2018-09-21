@@ -9,6 +9,10 @@ struct node{
     struct node *right;
 };
 
+struct symbols{
+    char symbol[8];
+    struct symbols *next;
+};
 
 void create(char* val, struct node *right, struct node *left){
     struct node *new;
