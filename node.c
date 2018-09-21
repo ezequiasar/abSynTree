@@ -28,24 +28,6 @@ void create(char* val, struct node *right, struct node *left){
         imprimirPre(reco->izq);
         imprimirPre(reco->der);
     }
-}
-
-struct node *search(int key, struct node *leaf){
-  if( leaf != 0 ){
-      if(key==leaf->value)
-      {
-          return leaf;
-      }
-      else if(key<leaf->value)
-      {
-          return search(key, leaf->left);
-      }
-      else
-      {
-          return search(key, leaf->right);
-      }
-  }
-  else return 0;
 }**/
  int main(int argc, char const *argv[]) {
     create("hola", NULL, NULL);
